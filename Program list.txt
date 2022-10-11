@@ -1,0 +1,584 @@
+Day-1
+    Ques-1
+
+#include<stdio.h>
+void main()
+{
+  printf("Enter the basic salary and Grade in uppercase");
+  int bs,totalsalary,hra,da,allow,pf;
+  char grd;
+  scanf("%d%c",&bs,&grd);
+  if(grd=='A')
+  allow=1700;
+  else if(grd=='B')
+  allow=1500;
+  else if(grd=='C')
+  allow=1300;
+  else
+  allow=1300;
+  totalsalary= bs+(0.2*bs)+(0.5*bs)+allow-(0.11*bs);
+  printf("The total salary is Rs.%d",totalsalary);
+}
+
+
+Day-1
+    Ques-2 
+
+#include <stdio.h>
+void main()
+{
+    int a, b, c;
+    printf("Enter three number");
+    scanf("%d%d%d", &a, &b, &c);
+    if (a > b && a > c)
+        printf("The largest number is %d", a);
+    else if (b > c)
+        printf("The largest number is %d", b);
+    else
+        printf("The largest number is %d", c);
+}
+
+
+Day-2
+    Ques-3
+
+#include <stdio.h>
+void main()
+{
+    char ch;
+    printf("Enter a alphabet in uppercase");
+    scanf("%c", &ch);
+    if (ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
+        printf("The alphabet is Vowel");
+    else
+        printf("The alphabet is Not-Vowel");
+}
+
+
+Day-1
+    Ques-4
+
+#include <stdio.h>
+void main()
+{
+    int yr;
+    printf("Enter a year");
+    scanf("%d", &yr);
+    if (yr % 4 == 0 && yr % 100 != 0 || yr\400 == 0)
+        printf("The entered year is a leap Year");
+    else
+        printf("The entered year is Not a leap Year");
+}
+
+
+Day-1
+    Ques-5
+
+
+
+
+Day-1
+    Ques-6
+
+#include <stdio.h>
+void main()
+{
+    int a, b, c;
+    printf("Enter the three sides of the triangle");
+    scanf("%d%d%d", &a, &b, &c);
+    if (a == b == c)
+        printf("The triangle is equilateral");
+    else if (a == b || b == c || c == a)
+        printf("The triangle is isosceles");
+    else
+        printf("The triangle is scalene");
+}
+
+
+Day-1
+    Ques-7
+
+#include <stdio.h>
+void main()
+{
+    int temp;
+    printf("Enter the temperature in Centrigrade");
+    scanf("%d", &temp);
+    if (temp < 0)
+        printf("Freezing weather");
+    else if (temp >= 0 && temp < 10)
+        printf("Very cold weather");
+    else if (temp >= 10 && temp < 20)
+        printf("Cold weather");
+    else if (temp >= 20 && temp < 30)
+        printf("Normal temp");
+    else if (temp >= 30 && temp < 40)
+        printf("Hot");
+    else
+        printf("Very Hot");
+}
+
+
+Day-1
+    Ques-8
+
+#include <stdio.h>
+void main()
+{
+    int x,y;
+    printf("Enter the x,y coordinates");
+    scanf("%d%d",&x,&y);
+    if(x>0 && y>0)
+    printf("First quardrant");
+    else if(x<0 && y>0)
+    printf("Second quardrant");
+    else if(x<0 && y<0)
+    printf("Third quardrant");
+    else
+    printf("Fourth quardrant");
+}
+
+
+
+
+
+
+
+
+Day-2
+    Ques-1
+
+#include<stdio.h>
+void main()
+{
+    int i,j,a=1;
+    for(int i=1;i<=5;i++)
+    {
+        for(j=i;j<=a;j++)
+        {
+            printf("%d",j);
+        }
+    a=a+2;
+    printf("\n");
+    }
+}
+
+
+Day-2
+    Ques-2
+
+#include<stdio.h>
+void main()
+{
+    int i,j,a=1;
+    for(i=1;i<=4;i++)
+    {
+        for(j=i;j<=a;j++)
+        { 
+        printf("%d ",j);
+        }
+        printf("\n");
+    a=a+2;
+    }
+}
+
+
+Day-2
+    Ques-3
+
+#include<stdio.h>
+void main()
+{
+    int i,j;
+    // char ch='A';
+    char ch=65;
+    for (i=0;i<3;i++)
+    {
+        for(j=0;j<=i;j++)
+        {
+            printf("%c",ch+i);
+        }
+        printf("\n");
+    }
+}
+
+
+Day-2
+    Ques-4
+
+#include<stdio.h>
+void main()
+{
+    char ch='A';
+    int i,j,a=1;
+    for(i=0;i<4;i++)
+    {
+        for(j=i;j<a;j++)
+        { 
+        printf("%c",ch+j);
+        }
+        printf("\n");
+    a=a+2;
+    }
+}
+
+
+Day-2
+    Ques-5
+
+#include<stdio.h>
+void main()
+{
+    char ch= 65;
+    int i,a=4,j;
+    for(i=1;i<=5;i++)
+    {
+        for(j=a;j<5;j++)
+        {
+            printf("%c",ch+j);
+        }
+        a=a-1;
+        printf("\n");
+    }
+}
+
+
+Day-2
+    Ques-6
+
+#include<stdio.h>
+void main()
+{
+   int i,j,w,q;
+   for(i=1;i<=4;i++)
+   {
+    for(w=4;w>i;w--)
+    {
+        printf(" ");
+    }
+    for(j=i;j<=2*i-1;j++)
+    {
+        printf("%d",j);
+    }
+    for(j=2*i-2;j>=i;j--)
+    {
+        printf("%d",j);
+    }
+    printf("\n");
+   }    
+}
+
+
+Day-2
+    Ques-7
+
+#include<stdio.h>
+void main()
+{
+    int i,j,w;
+    for(i=1;i<=4;i++)
+    {
+        for(j=4;j>i;j--)
+        {
+            printf(" ");
+        }
+        for(j=i;j>=1;j--)
+        {
+            printf("%d",j);
+        }
+        for(j=2;j<i+1;j++)
+        {
+            printf("%d",j);
+        }
+        printf("\n");
+    }
+}
+
+
+Day-2
+    Ques-8
+
+#include<stdio.h>
+void main()
+{
+    int i,j,w,a=1;
+    for(i=1;i<=4;i++)
+    {
+        for(j=4;j>i;j--)
+        {
+            printf(" ");
+        }
+        for(w=1;w<=a;w++)
+        {
+            printf("*");
+        }
+        a=a+2;
+        printf("\n");
+    }
+}
+
+
+
+Day-2
+    Ques-9
+
+
+
+Day-2
+    Ques-10
+
+
+
+
+Day-2  
+    Ques-11
+
+#include<stdio.h>
+void main()
+{
+   int i,j;
+   for(i=1;i<=5;i++)
+   {
+    for(j=1;j<=i;j++)
+    {
+        printf("%d",j);
+    }
+    for(j=5;j>i;j=j-1)
+    {
+        printf(" ");
+    }
+    for(j=5;j>i;j--)
+    {
+        printf(" ");
+    }
+    for(j=i;j>=1;j--)
+    {
+        printf("%d",j);
+    }
+    printf("\n");
+   }
+}
+
+
+Day-2
+    Ques-12
+
+#include<stdio.h>
+void main()
+{
+   int i,j,a=6,w=5;
+   for(i=1;i<=6;i++)
+   {
+    for(j=1;j<=a;j++)
+    printf("%d",j);
+    for(j=1;j<i;j++)
+    printf(" ");
+    for(j=2;j<i;j++)
+    printf(" ");
+    for(j=w;j>=1;j--)
+    printf("%d",j);
+    if(i==1)
+    w=w;
+    else
+    w=w-1;
+   a--;
+   printf("\n");
+   }
+}
+
+
+Day-2
+    Ques-13
+
+
+
+
+Day-2
+    Ques-14
+   
+
+
+
+Day-2
+    Ques-15
+
+
+Day-2
+    Ques-16
+
+
+
+
+Day-2
+    Ques-17
+
+#include <stdio.h>
+void main()
+{
+    int n, i, j;
+    printf("Enter a number");
+    scanf("%d", &n);
+    for (i = 1; i <= n; i++)
+    {
+        for (j = 1; j <= i; j++)
+            printf("%d", j);
+        if (i > 1)
+            for (j = i - 1; j >= 1; j--)
+                printf("%d", j);
+                printf("\n");
+    }
+}
+
+
+Day-2
+    Ques-18
+
+
+
+
+
+
+
+
+
+
+
+Day-3
+    Ques-1
+
+#include<stdio.h>
+void main()
+{
+    int i,n,sum=0,f=1;
+    printf("Enter a term upto which series to be formed");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        f=f*i;
+        sum=sum+f;
+    }
+    printf("sum osf series=%d",sum);
+}
+ 
+
+
+Day-3
+    Ques-2
+
+#include <stdio.h>
+void main()
+{
+    int i, n, sum = 0, f = 1, w;
+    printf("Enter a term upto which series to be formed");
+    scanf("%d", &n);
+    for (i = 1; i <= n; i++)
+    {
+        f = f * i;
+        w = f / i;
+        sum = sum + w;
+    }
+    printf("sum osf series=%d", sum);
+}
+
+
+Day-3
+    Ques-3
+
+#include <stdio.h>
+void main()
+{
+    float x, i, n, f = 1;
+    float sum = 1;
+    printf("Enter the value of x");
+    scanf("%f", &x);
+    printf("Enter the nth term of the series");
+    scanf("%f", &n);
+    for (i = 1; i <= n; i++)
+    {
+        f = f * i;
+        sum = sum + (x * i) / f;
+    }
+    printf("Sum of series is %f", sum);
+}
+
+
+Day-3
+    Ques-4
+
+#include <stdio.h>
+void main()
+{
+    float x, sum = 1, n, f = 1;
+    int i;
+    printf("Enter the value of x");
+    scanf("%f", &x);
+    printf("Enter the nth term of the series");
+    scanf("%f", &n);
+    for (i = 1; i <= n; i++)
+    {
+        f = f * i;
+        if (i % 2 == 0)
+            sum = sum + (x * i) / f;
+        else
+            sum = sum - (x * i) / f;
+    }
+    printf("Sum of series is %f", sum);
+}
+
+
+
+Day-3
+    Ques-5
+
+
+
+
+Day-3
+    Ques-6
+
+
+
+Day-3
+    Ques-7
+
+
+
+Day-3
+    Ques-8
+
+#include <stdio.h>
+void main()
+{
+    int i, n, f, sum;
+    printf("Enter the no. upto which series to be formed");
+    scanf("%d", &n);
+    for (i = 1; i <= n; i++)
+    {
+        f = i * (i + 1) * (i + 2);
+        sum = sum + f;
+    }
+    printf("sum of series is %d", sum);
+}
+
+
+Day-3
+    Ques-9
+
+#include<stdio.h>
+void main()
+{
+    int i,j,n;
+    printf("Enter the nth term of the series");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        for(j=1;j<=i;j++)
+        {
+            printf("*");
+        }
+        printf(" ");
+    }
+}
+
+         
+         
